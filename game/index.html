@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The Meridian Archive — Five Heists by Lamplight. A top-down stealth game: learn patrols, hide behind cover, collect relics, reach the exit unseen.">
+<title>The Meridian Archive — Five Heists by Lamplight</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #120d06; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; font-family: sans-serif; }
+  #game-canvas { display: block; width: 1280px; height: 800px; max-width: 100vw; }
+  #selftest-output { color: #f5e6b8; white-space: pre; font-size: 13px; padding: 12px; }
+  #help { color: #c9a86a; font-size: 13px; padding: 8px; text-align: center; }
+</style>
+</head>
+<body>
+<canvas id="game-canvas" width="1280" height="800"></canvas>
+<div id="help">WASD / arrows to move &bull; SHIFT to sprint &bull; collect 3 relics, then reach the green EXIT unseen &bull; statues, shelves and curtains block guard sight</div>
+<pre id="selftest-output"></pre>
+<script src="src/config.js"></script>
+<script src="src/input.js"></script>
+<script src="src/levels.js"></script>
+<script src="src/guards.js"></script>
+<script src="src/visionCone.js"></script>
+<script src="src/detectionMeter.js"></script>
+<script src="src/coverSystem.js"></script>
+<script src="src/exitGate.js"></script>
+<script src="src/footstepAudio.js"></script>
+<script src="src/render.js"></script>
+<script src="src/hud.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
